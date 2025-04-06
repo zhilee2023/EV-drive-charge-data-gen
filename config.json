@@ -1,5 +1,5 @@
 {
-    "model_type": "TransformerVAE",
+    "model_type": "TransformerGibbs",
     "batch_size": 256,
     "num_epochs": 10,
     "batch_num_per_epoch": 10,
