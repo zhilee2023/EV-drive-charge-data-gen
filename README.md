@@ -79,3 +79,15 @@ python fine_tune.py --config config.json --model_path models_test.pth
 ```
 This allows you to quickly generate synthetic EV driving/charging data or fine-tune the model using your own dataset.
 
+
+## Citation
+If you use this code or dataset, please cite our work:
+
+```bibtex
+@article{li2025evgen,
+  title={Synthetic Data Generation for Joint Electric Vehicle Driving and Charging Events via Deep Generative Networks},
+  author={Li, Zhi and Ma, Wei and Menendez, Monica and Chen, Zhibin and Zhong, Minghui},
+  year={2025},
+  journal={To appear}
+}
+
