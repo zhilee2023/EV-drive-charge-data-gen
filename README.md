@@ -36,7 +36,7 @@ python train.py --config config.json
 To fine-tune a pre-trained model on your specific dataset, execute:
 
 ```python
-python fine_tune.py --config config.json --models.test.pth
+python fine_tune.py --config config.json --model_path models.test.pth
 ```
 This script loads an existing pre-trained model and continues training using the settings specified in config.json.
 Before fine-tuning, consider adjusting parameters such as learning rate, batch size, and dataset paths to match your new data and fine-tuning objectives.
@@ -46,7 +46,7 @@ Before fine-tuning, consider adjusting parameters such as learning rate, batch s
 Once a model is trained or fine-tuned, you can generate synthetic driving and charging events by running:
 
 ```python
-python sample.py --config config.json --models.test.pth
+python sample.py --config config.json --model_path models.test.pth
 ```
 The generated output will be saved in the format (e.g., CSV).
 
