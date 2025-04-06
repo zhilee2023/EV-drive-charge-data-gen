@@ -14,7 +14,7 @@ This project relies on the following core Python packages:
 
 Due to the sensitive nature of the original dataset, we are unable to release it publicly.  Instead, we provide a synthetic dataset containing approximately **25,600 vehicles** and **60 drive/charge events per vehicle** in the file `sample.csv`.
 
-This sample data can be used for tasks such as **model training**, **fine-tuning**, or **algorithm evaluation**.
+This sample data can be used for tasks such as **model training**, **fine-tuning**, or **algorithm evaluation**. **Please note:** since the synthetic data differs from the original dataset in certain statistical and temporal characteristics, training results may also vary accordingly.
 
 ### 🚀 Usage Overview
 
