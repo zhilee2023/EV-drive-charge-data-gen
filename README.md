@@ -47,4 +47,4 @@ Once a model is trained or fine-tuned, you can generate synthetic driving and ch
 ```python
 python sample.py --config config.json --model_path path/to/trained_model.pth
 ```
-The generated output will be saved in the format (e.g., CSV) and location defined in your configuration file.
+The generated output will be saved in the format (e.g., CSV).
