@@ -51,3 +51,26 @@ Once a model is trained or fine-tuned, you can generate synthetic driving and ch
 python sample.py --config config.json --models.test.pth
 ```
 The generated output will be saved in the format (e.g., CSV).
+
+
+Pre-trained Model
+For quick testing and sample generation, we provide a ready-to-use pre-trained model named models_test.pth. To use this model with sample.py or fine_tune.py, update your config.json with the following settings:
+
+json
+
+{
+  "d_model": 128,
+  "layers": 48,
+  "model_type": "TransformerGibbs"
+}
+Then, run either:
+
+```python
+python sample.py --config config.json --model_path models_test.pth
+```
+
+```python
+python fine_tune.py --config config.json --model_path models_test.pth
+```
+This allows you to generate synthetic data directly or fine-tune the pre-trained model on your own dataset.
+
