@@ -29,9 +29,9 @@ Train the generative model from scratch using the provided config:
 
 ```bash
 python train.py --config config.json
+```bash
 
-
-###🔧 2. Fine-tune a Pre-trained Model
+### 🔧 2. Fine-tune a Pre-trained Model
 To fine-tune a pre-trained model on your specific dataset, execute:
 
 ```bash
