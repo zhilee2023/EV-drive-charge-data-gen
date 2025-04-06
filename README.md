@@ -35,6 +35,9 @@ python train.py --config config.json
 To fine-tune a pre-trained model on your specific dataset, execute:
 
 ```python
-python fine_tune.py --config config.json --model_path path/to/pretrained_model.pth
+python fine_tune.py --config config.json --models.test.pth
 ```
+This script loads an existing pre-trained model and continues training using the settings specified in config.json.
+Before fine-tuning, consider adjusting parameters such as learning rate, batch size, and dataset paths to match your new data and fine-tuning objectives.
+
 
