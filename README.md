@@ -10,9 +10,23 @@ This project relies on the following core Python packages:
 - **[NumPy 1.24.4](https://numpy.org/)** – For fast numerical computations, array handling, and mathematical operations.
 
 
-### 📁 Sample Data
+### 📁 Generated Data
 
-Due to the sensitive nature of the original dataset, we are unable to release it publicly.  
-Instead, we provide a synthetic dataset containing approximately **25,600 vehicles** and **60 drive/charge events per vehicle** in the file `sample.csv`.
+Due to the sensitive nature of the original dataset, we are unable to release it publicly.  Instead, we provide a synthetic dataset containing approximately **25,600 vehicles** and **60 drive/charge events per vehicle** in the file `sample.csv`.
 
 This sample data can be used for tasks such as **model training**, **fine-tuning**, or **algorithm evaluation**.
+
+### 🚀 Usage Overview
+
+This project provides three main scripts for model usage: `train.py`, `fine_tune.py`, and `sample.py`.  
+Each script requires a configuration file (`config.json`) and, if applicable, a pre-trained model path.
+
+---
+
+### 🏋️‍♂️ 1. Training from Scratch
+
+Train the generative model from scratch using the provided config:
+
+```bash
+python train.py --config config.json
+
