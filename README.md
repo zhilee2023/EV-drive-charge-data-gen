@@ -29,11 +29,12 @@ To train a new model using your own dataset, simply run:
 ```python
 python train.py --config config.json
 ```
-# more commands...
-### Generate Synthetic Data
-Once a model has been trained (or fine-tuned), you can generate synthetic driving and charging event data by running:
-
-python sample.py --config config.json --model_path path/to/trained_model.pth
 
 
+🔧 2. Fine-tune a Pre-trained Model
+To fine-tune a pre-trained model on your specific dataset, execute:
+
+```python
+python fine_tune.py --config config.json --model_path path/to/pretrained_model.pth
+```
 
