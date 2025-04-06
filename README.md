@@ -44,7 +44,7 @@ This script loads an existing pre-trained model and continues training using the
 Before fine-tuning, consider adjusting parameters such as learning rate, batch size, and dataset paths to match your new data and fine-tuning objectives.
 
 
-###🎲 3. Generate Synthetic Data
+### 🎲 3. Generate Synthetic Data
 Once a model is trained or fine-tuned, you can generate synthetic driving and charging events by running:
 
 ```python
