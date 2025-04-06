@@ -31,7 +31,7 @@ python train.py --config config.json
 ```
 
 
-🔧 2. Fine-tune a Pre-trained Model
+### 🔧 2. Fine-tune a Pre-trained Model
 To fine-tune a pre-trained model on your specific dataset, execute:
 
 ```python
