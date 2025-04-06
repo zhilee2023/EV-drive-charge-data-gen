@@ -48,6 +48,6 @@ Before fine-tuning, consider adjusting parameters such as learning rate, batch s
 Once a model is trained or fine-tuned, you can generate synthetic driving and charging events by running:
 
 ```python
-python sample.py --config config.json --model_path path/to/trained_model.pth
+python sample.py --config config.json --models.test.pth
 ```
 The generated output will be saved in the format (e.g., CSV).
