@@ -32,7 +32,6 @@ python train.py --config config.json
 ### Generate Synthetic Data
 Once a model has been trained (or fine-tuned), you can generate synthetic driving and charging event data by running:
 
-```bash
 python sample.py --config config.json --model_path path/to/trained_model.pth
 
 
