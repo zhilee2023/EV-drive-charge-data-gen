@@ -19,7 +19,10 @@ This sample data can be used for tasks such as **model training**, **fine-tuning
 ### 🚀 Usage Overview
 
 This project provides three main scripts for model usage: `train.py`, `fine_tune.py`, and `sample.py`.  
-Each script requires a configuration file (`config.json`) and, if applicable, a pre-trained model path.
+Each script requires a configuration file (`config.json`) and, if applicable, a path to a pre-trained model.
+
+We have uploaded a pre-trained model `models_test.pth`, which can be used directly for sample generation or fine-tuning.  
+By default, the sampling process generates **60 drive/charge events for a single vehicle**, but users can customize the number of events by modifying the `max_event_len` parameter in `sample.py`.
 
 ---
 
