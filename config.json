@@ -1,0 +1,27 @@
+{
+    "model_type": "TransformerVAE",
+    "batch_size": 256,
+    "num_epochs": 10,
+    "batch_num_per_epoch": 10,
+    "learning_rate": 1e-4,
+    "rnn_backbone": false,
+    "x_dim": 13,
+    "time_steps": 30,
+    "n_head": 8,
+    "n_loc": 252,
+    "embed_vector_len": 8,
+    "d_model": 16,
+    "n_layers": 16,
+    "tau": 0.01,
+    "z_dim": 8,
+    "sample_batch_size": 1024,
+    "sample_batch_num": 1,
+    "decay_rate": 1e-3,
+    "train_reward_function": false,
+    "cpo_batch_num": 10,
+    "cpo_epoch": 1,
+    "beta": 1,
+    "lambda_": 10,
+    "filter_veh": false
+  }
+  
