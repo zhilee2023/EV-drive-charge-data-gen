@@ -26,9 +26,9 @@ Each script requires a configuration file (`config.json`) and, if applicable, a 
 ### 🏋️‍♂️ 1. Training from Scratch
 To train a new model using your own dataset, simply run:
 
-```bash
-python train.py --config config.json
 
+python train.py --config config.json
+```bash
 ### Generate Synthetic Data
 Once a model has been trained (or fine-tuned), you can generate synthetic driving and charging event data by running:
 
