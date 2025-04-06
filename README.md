@@ -1,7 +1,9 @@
 # EV-drive-charge-data-gen
+
+## Description
 This repository is an optimized version of the article "Synthetic Data Generation for Joint Electric Vehicle Driving and Charging Events via Deep Generative Networks." It implements deep generative networks for synthesizing joint electric vehicle driving and charging event data with various improvements over the original approach.
 
-### 📦 Dependencies
+## 📦 Dependencies
 
 This project relies on the following core Python packages:
 
@@ -10,13 +12,13 @@ This project relies on the following core Python packages:
 - **[NumPy 1.24.4](https://numpy.org/)** – For fast numerical computations, array handling, and mathematical operations.
 
 
-### 📁 Generated Data
+## 📁 Generated Data
 
 Due to the sensitive nature of the original dataset, we are unable to release it publicly.  Instead, we provide a synthetic dataset containing approximately **25,600 vehicles** and **60 drive/charge events per vehicle** in the file `sample.csv`.
 
 This sample data can be used for tasks such as **model training**, **fine-tuning**, or **algorithm evaluation**. **Please note:** since the synthetic data differs from the original dataset in certain statistical and temporal characteristics, training results may also vary accordingly.
 
-### 🚀 Usage Overview
+## 🚀 Usage Overview
 
 This project provides three main scripts for model usage: `train.py`, `fine_tune.py`, and `sample.py`.  
 Each script requires a configuration file (`config.json`) and, if applicable, a path to a pre-trained model.
