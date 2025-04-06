@@ -65,7 +65,7 @@ To use the pre-trained model, make sure your `config.json` includes the followin
   "d_model": 128,
   "layers": 48,
   "model_type": "TransformerGibbs",
- "time_step": 60
+  "time_steps": 60
 }
 ```
 Then, run either:
