@@ -29,6 +29,7 @@ To train a new model using your own dataset, simply run:
 ```python
 python train.py --config config.json
 echo "Training finished"
+'''
 # more commands...
 ### Generate Synthetic Data
 Once a model has been trained (or fine-tuned), you can generate synthetic driving and charging event data by running:
