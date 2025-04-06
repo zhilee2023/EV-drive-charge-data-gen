@@ -21,8 +21,6 @@ This sample data can be used for tasks such as **model training**, **fine-tuning
 This project provides three main scripts for model usage: `train.py`, `fine_tune.py`, and `sample.py`.  
 Each script requires a configuration file (`config.json`) and, if applicable, a path to a pre-trained model.
 
-We have uploaded a pre-trained model `models_test.pth`, which can be used directly for sample generation or fine-tuning.  
-By default, the sampling process generates **60 drive/charge events for a single vehicle**, but users can customize the number of events by modifying the `max_event_len` parameter in `sample.py`.
 
 ---
 
@@ -54,10 +52,15 @@ The generated output will be saved in the format (e.g., CSV).
 
 
 ## Pre-trained Model
-For quick testing and sample generation, we provide a ready-to-use pre-trained model named models_test.pth. To use this model with sample.py or fine_tune.py, update your config.json with the following settings:
+
+For quick testing or experimentation, we provide a ready-to-use pre-trained model: `models_test.pth`.  
+This model can be used directly with `sample.py` for data generation or with `fine_tune.py` for further training on custom datasets.
+
+By default, the sampling process generates **60 drive/charge events per vehicle**, but this can be adjusted by modifying the `max_event_len` parameter in `sample.py`.
+
+To use the pre-trained model, make sure your `config.json` includes the following settings:
 
 ```json
-
 {
   "d_model": 128,
   "layers": 48,
@@ -73,5 +76,5 @@ python sample.py --config config.json --model_path models_test.pth
 ```python
 python fine_tune.py --config config.json --model_path models_test.pth
 ```
-This allows you to generate synthetic data directly or fine-tune the pre-trained model on your own dataset.
+This allows you to quickly generate synthetic EV driving/charging data or fine-tune the model using your own dataset.
 
