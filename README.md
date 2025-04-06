@@ -28,7 +28,6 @@ To train a new model using your own dataset, simply run:
 
 ```python
 python train.py --config config.json
-echo "Training finished"
 ```
 # more commands...
 ### Generate Synthetic Data
