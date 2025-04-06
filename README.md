@@ -56,7 +56,7 @@ The generated output will be saved in the format (e.g., CSV).
 For quick testing or experimentation, we provide a ready-to-use pre-trained model: `models_test.pth`.  
 This model can be used directly with `sample.py` for data generation or with `fine_tune.py` for further training on custom datasets.
 
-By default, the sampling process generates **60 drive/charge events per vehicle**, but this can be adjusted by modifying the `max_event_len` parameter in `sample.py`.
+By default, the sampling process generates **60 drive/charge events per vehicle**, but this can be adjusted by modifying the `time_steps` parameter in `config.json`.
 
 To use the pre-trained model, make sure your `config.json` includes the following settings:
 
@@ -73,7 +73,7 @@ Then, run either:
 ```python
 python sample.py --config config.json --model_path models_test.pth
 ```
-
+or
 ```python
 python fine_tune.py --config config.json --model_path models_test.pth
 ```
