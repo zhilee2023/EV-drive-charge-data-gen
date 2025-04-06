@@ -53,16 +53,17 @@ python sample.py --config config.json --models.test.pth
 The generated output will be saved in the format (e.g., CSV).
 
 
-Pre-trained Model
+## Pre-trained Model
 For quick testing and sample generation, we provide a ready-to-use pre-trained model named models_test.pth. To use this model with sample.py or fine_tune.py, update your config.json with the following settings:
 
-json
+```json
 
 {
   "d_model": 128,
   "layers": 48,
   "model_type": "TransformerGibbs"
 }
+```
 Then, run either:
 
 ```python
