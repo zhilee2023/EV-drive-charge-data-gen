@@ -26,7 +26,7 @@ Each script requires a configuration file (`config.json`) and, if applicable, a 
 ### 🏋️‍♂️ 1. Training from Scratch
 To train a new model using your own dataset, simply run:
 
-```bash
+```python
 python train.py --config config.json
 # more commands...
 ### Generate Synthetic Data
