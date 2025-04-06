@@ -24,12 +24,10 @@ Each script requires a configuration file (`config.json`) and, if applicable, a 
 ---
 
 ### 🏋️‍♂️ 1. Training from Scratch
-
-Train the generative model from scratch using the provided config:
+To train a new model using your own dataset, simply run:
 
 ```bash
 python train.py --config config.json
-```bash
 
 ### 🔧 2. Fine-tune a Pre-trained Model
 To fine-tune a pre-trained model on your specific dataset, execute:
