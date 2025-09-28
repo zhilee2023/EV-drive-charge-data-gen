@@ -382,9 +382,13 @@ class TransformerGibbs(nn.Module):
             min_x = torch.zeros(len(x_dec), device=self.device)
             max_x = torch.ones(len(x_dec), device=self.device)
             constraints = (min_x, max_x)
+
             dist = self.decoder[j](x_dec.unsqueeze(1), j)[0]
             sample_val = self.sample_truncated(dist, constraints)
             sample_val = torch.clamp(sample_val, 0, 1)
+            sample_update = torch.where(trip_kind == 0,
+                                torch.tensor(0.0, device=self.device),
+                                sampled)
 
         elif j == 5:
             # end_soc: 与 trip_kind / start_soc 相关
